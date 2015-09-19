@@ -1,7 +1,7 @@
 app.factory('RepFactory', function() {
   var reps = [{
     id: 1,
-    name: "asdfadf",
+    name: "me",
     address: "",
     phone: "",
     email: "",
