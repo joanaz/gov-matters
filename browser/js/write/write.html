@@ -1,0 +1,19 @@
+<section id="write">
+  <h1>Making it matter</h1>
+  <ul class="scroll-list">
+    <li class="scroll-item" ng-repeat="rep in reps">
+      <a ng-click="repSelected(rep.id)" ng-class="{selected: rep.id === petition.repId}">
+        <rep-thumbnail rep="rep"></rep-thumbnail>
+      </a>
+    </li>
+  </ul>
+  <div class="form-group">
+  <h3><label for="petitiontitle">Title</label></h3>
+    <input type="text" class="form-control" id="petitiontitle" ng-model="petition.title">
+  </div>
+  <div class="form-group">
+    <h3><label for="petitiondescription">Description</label></h3>
+    <textarea class="form-control" rows="20" id="petitiondescription" ng-model="petition.description"></textarea>
+  </div>
+  <button class="btn btn-primary" ng-click="submit()">Submit</button>
+</section>

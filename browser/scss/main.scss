@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fdfdfd;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+#main {
+  padding-top: 60px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.scroll-list{
+  list-style: none;
+  // color: white;
+  white-space: nowrap;
+  overflow-x: scroll;
+  // a {
+  //   color: white;
+  // }
+}
+
+.scroll-item{
+  // li {
+  //   overflow-x: scroll;
+  // }
+  white-space: normal;
+  vertical-align: top;
+  // width: 250px;
+  display: inline-block;
+  margin: 10px 10px 90px 10px;
+  .selected {
+    .thumbnail {
+      background-color: red;
+    }
+  }
+  a:hover {
+    .thumbnail {
+      background-color: grey;
+    }
+  }
+}
+
+@import 'directives/main';
+@import 'home/main';
+@import 'about/main';
+@import 'tutorial/main';
+@import 'login/main';

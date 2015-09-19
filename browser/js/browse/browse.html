@@ -1,0 +1,29 @@
+<section id="browse">
+  <div class="row">
+    <div class="col-sm-8 col-lg-8">
+      <h1>What matters?</h1>
+      <div ng-repeat="petition in petitions">
+        <div class="media">
+          <div class="media-left">
+            <a ui-sref="petition({id:petition.id})">
+              <img class="media-object" src="petition.image">
+            </a>
+          </div>
+          <div class="media-body">
+            <a ui-sref="petition({id:petition.id})"><h4 class="media-heading">{{petition.title}}</h4></a>
+            <p>by {{petition.author}} | {{petition.numOfSupporters}} supporters | <a>sign</a></p>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="col-sm-4 col-lg-4">
+      <button class="btn btn-danger btn-xl" ui-sref="write">What's the matter?</button>
+      <h1>Reps</h1>
+        <div ng-repeat="rep in reps">
+          <rep-thumbnail rep="rep"></rep-thumbnail>
+        <hr>
+      </div>
+    </div>
+  </div>
+</section>

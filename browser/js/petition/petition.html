@@ -1,0 +1,16 @@
+<section id="petition">
+  <h1>The Matter</h1>
+  <div class="row">
+    <div class="col-sm-8 col-lg-8">
+      <h3>{{petition.title}}</h3>
+      <p>{{petition.description}}</p>
+    </div>
+    <div class="col-sm-4 col-lg-4">
+      <h3>Target</h3>
+      <rep-thumbnail rep="rep"></rep-thumbnail>
+      <button class="btn btn-danger" ng-click="signed()">Sign On</button>
+      <hr>
+      <button class="btn btn-warning" ng-click="donate()">Contribute</button>
+    </div>
+  </div>
+</section>
