@@ -2,18 +2,43 @@
 <html lang="en">
 <head>
     <base href="/" />
-    <title>Fullstack Academy Generated Application</title>
+    <title>Gov Matters</title>
     <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="/style.css" />
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script src="/lodash/index.js"></script>
     <script src="/angular/angular.js"></script>
     <script src="/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="/angular-bootstrap/ui-bootstrap.js"></script>
     <script src="/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="/socket.io-client/socket.io.js"></script>
+    <script src="/angulike.js"></script>
     <script src="/main.js"></script>
 </head>
 <body ng-app="FullstackGeneratedApp">
+    <!-- <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1498322677132667',
+          xfbml      : true,
+          version    : 'v2.4'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script type="text/javascript">
+        var sUrl = window.location;
+        document.getElementById('fb').setAttribute('href', sUrl);
+    </script>
+ -->
     <navbar></navbar>
     <div id="main" ui-view></div>
 </body>
