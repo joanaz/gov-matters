@@ -1,5 +1,5 @@
 module.exports = {
-  "DATABASE_URI": "mongodb://joanaz:joanaz24@ec2-52-89-67-9.us-west-2.compute.amazonaws.com:27017/gov-matters",
+  "DATABASE_URI": "mongodb://localhost:27017/gov-matters",
   "SESSION_SECRET": "Optimus Prime is my real dad",
   "TWITTER": {
     "consumerKey": "INSERT_TWITTER_CONSUMER_KEY_HERE",
