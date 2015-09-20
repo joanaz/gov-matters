@@ -20,35 +20,30 @@ body {
   margin: 0 auto;
 }
 
-.scroll-list {
+.scroll-list{
   list-style: none;
-
   // color: white;
   white-space: nowrap;
   overflow-x: scroll;
-
   // a {
   //   color: white;
   // }
 }
 
-.scroll-item {
+.scroll-item{
   // li {
   //   overflow-x: scroll;
   // }
   white-space: normal;
   vertical-align: top;
-
   // width: 250px;
   display: inline-block;
   margin: 10px 10px 90px 10px;
-
   .selected {
     .thumbnail {
       background-color: red;
     }
   }
-
   a:hover {
     .thumbnail {
       background-color: grey;
@@ -56,8 +51,8 @@ body {
   }
 }
 
-@import "directives/main";
-@import "home/main";
-@import "browse/main";
-@import "tutorial/main";
-@import "login/main";
+@import 'directives/main';
+@import 'home/main';
+@import 'about/main';
+@import 'tutorial/main';
+@import 'login/main';
