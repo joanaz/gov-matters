@@ -3,11 +3,38 @@
   <div class="row">
     <div class="col-sm-8 col-lg-8">
       <h3>{{petition.title}}</h3>
+      <div class="row">
+        <div class="col-xs-5 col-md-5">
+            <!-- <div fb-like="socialPage.Url"></div> -->
+          <div class="fb-like" id="fb"
+            data-href="socialPage.Url" 
+            data-layout="button_count" 
+            data-action="recommend" 
+            data-show-faces="true" 
+            data-share="true"
+            data-width="500">
+          </div> 
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <div tweet="socialPage.Name" tweet-url="socialPage.Url"></div>
+        </div>
+        <div class="col-xs-2 col-md-2">
+            <div google-plus="socialPage.Url"></div>
+        </div>
+        <div class="col-xs-1 col-md-1">
+            <div pin-it="socialPage.Name" pin-it-image="socialPage.ImageUrl" pin-it-url="socialPage.Url"></div>
+        </div>
+      </div>
       <p>{{petition.description}}</p>
+      <div class="fb-comments" 
+        data-href="socialPage.Url"
+        data-numposts="5">
+      </div>
     </div>
     <div class="col-sm-4 col-lg-4">
       <h3>Target</h3>
-      <rep-thumbnail rep="rep"></rep-thumbnail>
+      <a ui-sref="rep({id:rep.id})">
+        <rep-thumbnail rep="rep"></rep-thumbnail></a>
       <button class="btn btn-danger" ng-click="signed()">Sign On</button>
       <hr>
       <button class="btn btn-warning" ng-click="donate()">Contribute</button>
