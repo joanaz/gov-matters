@@ -1,11 +1,12 @@
 <div class="thumbnail">
-  <!-- <a ui-sref="rep({id:rep.id})"> -->
-    <img src="rep.image">
-  <!-- </a> -->
+  <a ui-sref="rep({id:rep.id})">
+    <img src={{rep.image}} height="150" width="150">
+  </a>
   <div class="caption">
+  	<p><b>{{rep.name}}</b></p>
+  	<p>{{rep.jobTitle}}</p>
     <p>{{rep.address}}</p>
     <p>phone: {{rep.phone}}</p>
     <p>email: {{rep.email}}</p>
-    <p>{{rep.role}}</p>
   </div>
 </div> 

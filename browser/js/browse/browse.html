@@ -1,8 +1,9 @@
 <section id="browse">
   <div class="row">
     <div class="col-sm-8 col-lg-8">
-      <h1>What matters?</h1>
-      <div ng-repeat="petition in petitions | reverse">
+      <h1>What matters:</h1>
+      <div ng-repeat="petition in petitions">
+        
         <div class="media">
           <div class="media-left">
             <a ui-sref="petition({id:petition.id})">
@@ -11,21 +12,22 @@
           </div>
           <div class="media-body">
             <a ui-sref="petition({id:petition.id})"><h4 class="media-heading">{{petition.title}}</h4></a>
-            <p>by {{petition.author}} | {{petition.numOfSupporters}} supporters | <a>sign</a></p>
+            <p> {{petition.numOfSupporters}} Supporters | {{petition.type}} |</p>
           </div>
         </div>
+
         <hr>
       </div>
     </div>
     <div class="col-sm-4 col-lg-4">
-      <button class="btn btn-danger btn-xl" ui-sref="write">What's the matter?</button>
-      <h1>Reps</h1>
+      <button class="btn btn-danger btn-xl" ui-sref="write"><h3>What's the matter?</h3><h5><i>Create a new point of matter</i></h5></button>
+      <h3>Your Representatives:</h3>
+       
         <div ng-repeat="rep in reps">
-        <a ui-sref="rep({id:rep.id})">
           <rep-thumbnail rep="rep"></rep-thumbnail>
-        </a>
         <hr>
       </div>
+      
     </div>
   </div>
 </section>
