@@ -1,7 +1,7 @@
 <section id="rep">
   <h1>{{rep.name}}</h1>
   <div class="row">
-    <div class="col-sm-8 col-lg-8" ng-repeat="petition in petitions | reverse">
+    <div class="col-sm-8 col-lg-8" ng-repeat="petition in petitions">
       <div class="media">
         <div class="media-left">
           <a ui-sref="petition({id:petition.id})">
