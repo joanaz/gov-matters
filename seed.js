@@ -52,15 +52,7 @@ var seedReps = function() {
 
 var seedPetitions = function() {
     var petitions = [{
-        title: "me",
-        author: "asdf",
-        numOfSupporters: "1",
-        image: "",
-        repId: "1"
-    }];
-
-    var petitions1 = [{
-        title: "asdfadf1",
+        title: "asdfadf",
         author: "asdf",
         numOfSupporters: "1",
         image: "",

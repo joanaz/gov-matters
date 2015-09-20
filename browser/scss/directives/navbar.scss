@@ -1,5 +1,4 @@
 navbar {
-
   display: block;
   background: lighten($theme-color, 10%);
   border-bottom: 1px solid black;
@@ -11,7 +10,6 @@ navbar {
     padding-top: 20px;
     position: relative;
   }
-
 
   .center {
     margin-left: 500px;
@@ -48,16 +46,19 @@ navbar {
     // float: left;
     cursor: pointer;
     transition: color 0.2s;
-    &.active {
+    font-weight: 700;
+    color: darken(grey, 10%);
 
+    &.active {
       background: white;
       color: darken($theme-color, 10%);
     }
-    &:hover {
 
+    &:hover {
       background: white;
       color: $theme-color;
     }
+
     &:focus {
       background: white;
     }
@@ -74,13 +75,14 @@ navbar {
   .welcome {
     float: right;
     margin-top: 12px;
+
     span {
       color: white;
     }
+
     a {
       color: #f30046;
       cursor: pointer;
     }
   }
-
 }

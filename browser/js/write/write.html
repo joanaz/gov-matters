@@ -7,13 +7,42 @@
       </a>
     </li>
   </ul>
+  <form novalidate>
   <div class="form-group">
-  <h3><label for="petitiontitle">Title</label></h3>
+    <h3><label for="petitiontitle">Title</label></h3>
     <input type="text" class="form-control" id="petitiontitle" ng-model="petition.title">
   </div>
   <div class="form-group">
     <h3><label for="petitiondescription">Description</label></h3>
-    <textarea class="form-control" rows="20" id="petitiondescription" ng-model="petition.description"></textarea>
+    <textarea type="text" class="form-control" rows="10" id="petitiondescription" ng-model="petition.description"></textarea>
   </div>
-  <button class="btn btn-primary" ng-click="submit()">Submit</button>
+  <div class="form-group">
+    <!-- <h3><label for="petitioncategory">Category</label></h3> -->
+
+<!--   <div class="dropup">
+    <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      <h4>Category <span class="caret"></span></h4>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+      <li ng-repeat="category in categories">
+      <a ng-click="categorySelected(category)"><h4>{{category}}</h4></a>
+      </li>
+    </ul>
+  </div> -->
+
+    <h3><label for="petitioncategory">Category</label></h3>
+
+    <select class="form-control" id="petitioncategory">
+      <option ng-repeat="category in categories" value="category">
+          <a ng-click="categorySelected(category)"><h4>{{category}}</h4></a>
+      </option>
+      
+    </select>
+
+
+    <!-- <input type="text" class="form-control" id="petitioncategory" ng-model="petition.category"> -->
+  </div>
+  <input type="submit" class="btn btn-danger btn-lg" ng-click="submit()" value="Submit" />
+  </form>
+  <h1></h1>
 </section>

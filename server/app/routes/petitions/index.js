@@ -36,8 +36,8 @@ router.param('id', function(req, res, next, id) {
     });
 });
 
-router.get('/:id', function(req, res, next) {
-  res.json(petition)
+router.get('/:id', function(req, res) {
+  res.json(req.petition)
 });
 
 router.put('/:id', function(req, res, next) {

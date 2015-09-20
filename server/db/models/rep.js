@@ -5,26 +5,20 @@ var schema = new mongoose.Schema({
     name: {
         type: String
     },
-    jobTitle: {
+    address: {
         type: String
     },
     phone: {
         type: String
     },
-    fax: {
-        type: String
-    },
     email: {
         type: String
     },
-    website: {
+    role: {
         type: String
     },
-    twitter: {
+    image: {
         type: String
-    },
-    facebook: {
-        type: String 
     }
 });
 
