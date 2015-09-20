@@ -4,31 +4,32 @@
     <div class="col-sm-8 col-lg-8">
       <h3>{{petition.title}}</h3>
       <div class="row">
-        <div class="col-xs-12 col-md-3">
-            <div fb-like="socialPage.Url"></div>
+        <div class="col-xs-5 col-md-5">
+            <!-- <div fb-like="socialPage.Url"></div> -->
+          <div class="fb-like" id="fb"
+            data-href="socialPage.Url" 
+            data-layout="button_count" 
+            data-action="recommend" 
+            data-show-faces="true" 
+            data-share="true"
+            data-width="500">
+          </div> 
         </div>
-        <div class="col-xs-12 col-md-3">
+        <div class="col-xs-3 col-md-3">
             <div tweet="socialPage.Name" tweet-url="socialPage.Url"></div>
         </div>
-        <div class="col-xs-12 col-md-3">
+        <div class="col-xs-2 col-md-2">
             <div google-plus="socialPage.Url"></div>
         </div>
-        <div class="col-xs-12 col-md-3">
+        <div class="col-xs-1 col-md-1">
             <div pin-it="socialPage.Name" pin-it-image="socialPage.ImageUrl" pin-it-url="socialPage.Url"></div>
         </div>
       </div>
-
-
-
-      <!-- <div class="fb-like" id="fb"
-        data-href="http://loc.co/petition/" 
-        data-layout="standard" 
-        data-action="recommend" 
-        data-show-faces="true" 
-        data-share="true"
-        data-width="500">
-      </div> -->
       <p>{{petition.description}}</p>
+      <div class="fb-comments" 
+        data-href="socialPage.Url"
+        data-numposts="5">
+      </div>
     </div>
     <div class="col-sm-4 col-lg-4">
       <h3>Target</h3>
