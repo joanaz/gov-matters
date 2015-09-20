@@ -12,6 +12,9 @@ app.factory('PetitionFactory', function() {
     getAllPetitions: () => petitions,
     getOnePetition: (id) => petitions.filter(elem => elem.id == id)[0],
     getRepsPetitions: (repId) => petitions.filter(elem => elem.repId == repId),
-    addPetition: (petition) => petitions.push(petition)
+    addPetition: (petition) => {
+      petition.id = petitions.length + 1
+      petitions.push(petition)
+    }
   }
 })

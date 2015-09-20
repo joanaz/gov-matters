@@ -1,9 +1,12 @@
+$theme-color: #d75452;
+
 * {
   box-sizing: border-box;
 }
 
 body {
   background: #fdfdfd;
+  font-family: "Avenir Next" !important;
 }
 
 @mixin clearfix {
