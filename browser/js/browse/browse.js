@@ -5,8 +5,9 @@ app.config(function($stateProvider) {
     controller: ($scope, PetitionFactory, RepFactory) => {
       $scope.petitions = PetitionFactory.getAllPetitions()
       $scope.reps = RepFactory.getAllReps()
+      console.log($scope.reps)
         // RepFactory.getCities();
-      RepFactory.getRepsByZipcode(31023)
+      //RepFactory.getRepsByZipcode(31023)
     }
   });
 });

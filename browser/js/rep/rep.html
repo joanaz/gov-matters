@@ -1,7 +1,8 @@
 <section id="rep">
   <h1>{{rep.name}}</h1>
   <div class="row">
-    <div class="col-sm-8 col-lg-8" ng-repeat="petition in petitions">
+    <div class="col-sm-8 col-lg-8">
+    <div  ng-repeat="petition in petitions">
       <div class="media">
         <div class="media-left">
           <a ui-sref="petition({id:petition.id})">
@@ -10,10 +11,11 @@
         </div>
         <div class="media-body">
           <a ui-sref="petition({id:petition.id})"><h4 class="media-heading">{{petition.title}}</h4></a>
-          <p>by {{petition.author}} | {{petition.numOfSupporters}} supporters | <a>sign</a></p>
+          <p>{{petition.numOfSupporters}} Supporters | {{petition.type}} |</p>
         </div>
       </div>
       <hr>
+      </div>
     </div>
     <div class="col-sm-4 col-lg-4">
       <rep-thumbnail rep="rep"></rep-thumbnail>
