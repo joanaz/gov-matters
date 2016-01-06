@@ -32,10 +32,11 @@
 
     <h3><label for="petitioncategory">Category</label></h3>
 
-    <select class="form-control" id="petitioncategory">
-      <option ng-repeat="category in categories" value="category">
-          <a ng-click="categorySelected(category)"><h4>{{category}}</h4></a>
-      </option>
+    <select class="form-control" id="petitioncategory" ng-model="petition.type" ng-options="category as category for category in categories" >
+        <!-- <a ng-click="categorySelected(category)"> -->
+        <!-- <h4>{{category}}</h4> -->
+        <!-- </a> -->
+      <!-- </option> -->
       
     </select>
 

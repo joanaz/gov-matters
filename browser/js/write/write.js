@@ -5,7 +5,7 @@ app.config(function($stateProvider) {
     controller: ($scope, $state, PetitionFactory, RepFactory) => {
       $scope.reps = RepFactory.getAllReps()
         // $scope.categories = RepFactory.getAllCategories()
-      $scope.categories = ["asdfas", "asdfa sdf"]
+      $scope.categories = ["Transportation", "Environment", "Economy", "Criminal Justice", "Health", "Education", "Labor", "Public Safety", "Public Services"]
 
       $scope.petition = {
         numOfSupporters: 0
@@ -18,9 +18,11 @@ app.config(function($stateProvider) {
       $scope.repSelected = function(id) {
         $scope.petition.repId = id
       }
-      $scope.categorySelected = function(category) {
-        $scope.petition.category = category
-      }
+
+      // $scope.categorySelected = function(category) {
+      //   console.log(category)
+      //   $scope.petition.type = category
+      // }
     }
   });
 });

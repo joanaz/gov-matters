@@ -4,11 +4,11 @@
       <h1>What matters?</h1>
       <div ng-repeat="petition in petitions | reverse">
         <div class="media">
-          <div class="media-left">
+          <!-- <div class="media-left">
             <a ui-sref="petition({id:petition.id})">
-              <img class="media-object" src="{{petition.image}}">
+               <img class="media-object" src="{{petition.image}}"> 
             </a>
-          </div>
+          </div>-->
           <div class="media-body">
             <a ui-sref="petition({id:petition.id})"><h4 class="media-heading">{{petition.title}}</h4></a>
             <p> {{petition.numOfSupporters}} Supporters | {{petition.type}} |</p>

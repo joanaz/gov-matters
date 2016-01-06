@@ -9,6 +9,8 @@ body {
   padding: 0;
   background: #fdfdfd;
   font-family: "Avenir Next" !important;
+  background-image: url("http://eskipaper.com/images/brooklyn-bridge-sunset-1.jpg");
+  min-height: 400px;
 }
 
 @mixin clearfix {
@@ -23,6 +25,7 @@ body {
   padding-top: 60px;
   width: 80%;
   margin: 0 auto;
+  background-color: white;
 }
 
 .scroll-list {

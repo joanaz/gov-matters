@@ -2,9 +2,13 @@
   margin-top: 40px;
   padding-top: 30px;
   margin: 0 auto;
- 
+  background-color: none !important;
+
   h1 {
     text-align: center;
+    background-color: none;
   }
-}
 
+  // background-image: url("http://eskipaper.com/images/brooklyn-bridge-sunset-1.jpg");
+  // min-height: 700px;
+}
